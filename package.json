@@ -1,0 +1,44 @@
+{
+  "name": "ssl-storm",
+  "version": "0.0.2",
+  "dependencies": {
+    "needle": "0.10.1",
+    "jsonschema": "1.0.2",
+    "bluebird": "2.9.34",
+    "async": "0.9.0"
+  },
+  "engines": {
+    "node": ">=0.6.x"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "author": "CCCP",
+  "description": "ssl-storm module implements corenova SSL configuration on stormflash enabled devices",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stormstack/ssl-storm.git"
+  },
+  "stormflash": {
+    "packages": [
+    ],
+    "services": [
+      "web.*"
+    ]
+  },
+  "main": "./lib/context",
+  "config": {
+  },
+  "scripts": {
+      "prepublish": "mkdir -p lib; coffee -o lib -c src"
+  },
+  "contributors": [
+  ],
+  "readmeFilename": "README.md",
+  "bugs": {
+      "url": "https://github.com/stormstack/ssl-storm/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/stormstack/ssl-storm",
+  "_id": "ssl-storm@0.0.2",
+  "_from": "ssl-storm@"
+}
